@@ -353,3 +353,40 @@ var threeSum = function(nums) {
     }
     return result;    
 };
+
+//Election sorting
+
+var thSmallest = function(matrix, k) {
+
+    var string = [];
+
+    for(let i=0;i<matrix.length;i++){
+        console.log(matrix[i]);
+        for(let j=0; j<matrix[i].length;j++){
+        let small = j;
+        if(matrix[i][j].length <= 1) return;
+        if(matrix[i][j+1] < matrix[i][small]){
+
+            let current = matrix[i][small];
+            matrix[i][small] = matrix[i][j+1];
+            matrix[i][j+1] = current;
+            console.log('swapping '+ matrix[i][small]);
+        }
+        console.log('number '+matrix[i][small]);
+        
+        string.push(matrix[i][small]);
+        console.log(string);
+        
+}
+}
+console.log(string[k-1]);
+//return string[k-1];
+};
+/*
+[[1,2],[1,3]]
+2
+*/
+ thSmallest([[1,2],[1,3]],2);
+
+
+
