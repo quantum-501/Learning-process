@@ -447,3 +447,37 @@ var search = function(nums, target) {
   return -1;
 };
 
+// Find All Anagrams in a String
+//（Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order
+
+var findAnagrams = function(s, p) {
+    /*
+    let j = 0, t;
+    let array =[], empty={};
+    if(s.length < p.length) return;
+    
+    p.split("").map(c => empty[c] = empty[c]? empty[c]+1:1);
+    
+    while(j<s.length){
+        let i = j+p.length-1;
+        t = s.split("").slice(j,i);
+        t.find(c => empty[c] = empty[c]?array.push(t[0]): j = p.length - c );
+    }
+      return array;
+    */
+     let result = [];
+  if (p.length > s.length) return undefined;
+  
+  let left = 0;
+  let right = p.length;
+  
+  while(left < s.length) {
+    let tmp = s.substr(left,right);
+    if ( tmp.split('').sort().join('') === p.split('').sort().join('')){
+      result.push(left);
+    }
+    left++;
+    //right++;
+  }
+  return result;
+ };
