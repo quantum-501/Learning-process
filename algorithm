@@ -452,6 +452,7 @@ var search = function(nums, target) {
 
 var findAnagrams = function(s, p) {
     /*
+     // method one
     let j = 0, t;
     let array =[], empty={};
     if(s.length < p.length) return;
@@ -465,6 +466,8 @@ var findAnagrams = function(s, p) {
     }
       return array;
     */
+    
+    // method two
      let result = [];
   if (p.length > s.length) return undefined;
   
@@ -480,9 +483,29 @@ var findAnagrams = function(s, p) {
     //right++;
   }
   return result;
+  
+  // method three
+   let l = 0, r = 0;
+    let m = new Map();
+    for (let letter of p) m.set(letter, m.get(letter)+1 || 1);
+    let counter = m.size, res = [];
+    while (r < s.length) {
+        let letter = s[r];
+        if (m.has(letter)) m.set(letter, m.get(letter)-1);
+        if (m.get(letter) == 0) counter--;
+        
+        while (counter == 0) {
+            if (r-l+1 == p.length) res.push(l);
+            if (m.has(s[l])) m.set(s[l],m.get(s[l])+1);
+            if (m.get(s[l]) > 0) counter++;
+            l++;
+        }
+        r++;
+    }
+    return res;
  };
  
-// Ransom Not
+// Ransom Note
 // Given two strings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
 //  Each letter in magazine can only be used once in ransomNote
  var canConstruct = function(ransomNote, magazine) {
