@@ -158,6 +158,30 @@ mergeSort([5, 1, 7, 3, 2, 8, 6, 4]);
 > ** end of merge function ** array is:  (8) [1, 2, 3, 4, 5, 6, 7, 8]
 >> (8) [1, 2, 3, 4, 5, 6, 7, 8]> 
 
+// alteration at selection sorting
+//Kth Smallest Element in a Sorted Matrix
+//Given an n x n matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix
+var kthSmallest = function(matrix, k) {
+    var string = [];
+    for(let i=0;i<matrix.length;i++){
+        console.log(matrix[i]);
+        for(let j=0; j<matrix[i].length;j++){
+        let small = j;
+        if(matrix[i][j].length <= 1) return;
+        if(matrix[i][j+1] < matrix[i][small]){
+            let current = matrix[i][small];
+            matrix[i][small] = matrix[i][j+1];
+            matrix[i][j+1] = current;
+            console.log('swapping '+ matrix[i][small]);
+        }
+        string.push(matrix[i][small]);
+            
+}
+        string.sort((a,b)=> a - b);
+}
+    return string[k-1];
+}
+
 
 ////what is two pointer?
 
