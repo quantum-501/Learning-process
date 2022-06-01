@@ -610,3 +610,43 @@ var hasCycle = function(head) {
     return false;
 
 };
+
+//Remove Nth Node From End of List
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+var removeNthFromEnd = function(head, n) {
+    /*
+    let prev = null,i=0;
+    let current = head;
+    if((current === null)&&(n<0)){
+      return prev;
+    }
+    
+    if(current.length - n === 0){
+      return current.next;
+    }
+    
+    while((current !== null)&&(i< current.length - n)){
+        prev = current;
+        current = current.next;
+        i++;
+     }
+    
+    if(current !== null){
+        prev.next = current.next;
+        return prev;
+    }
+    */
+    let fast = head, slow = head
+    for (let i = 0; i < n; i++) fast = fast.next
+    if (!fast) return head.next
+    while (fast.next) fast = fast.next, slow = slow.next
+    slow.next = slow.next.next
+    return head
+};
