@@ -717,3 +717,30 @@ MyStack.prototype.empty = function() {
  * var param_4 = obj.empty()
  */
  
+ 
+// Maximum Depth of Binary Tree
+
+var maxDepth = function(root) {
+    // accurate answering
+    if(!root) return null;
+    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    
+    // answer written by me (wrong)
+    /*
+    let i = 0;
+    if(root === null)   return i;
+    }else{
+        if(root.left !== null) { 
+            maxDepth(root.left);
+        }
+        
+        if(root.right !== null){
+            maxDepth(root.right);
+        }
+        i++;
+    }
+    return i++;
+    */
+    
+};
+
