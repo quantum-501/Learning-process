@@ -746,7 +746,7 @@ var maxDepth = function(root) {
 
 //traversalBFS(adjacencyList)；
 //bread-first search
-
+//口诀：起点找branch，层层点点过，存入values，放seen true,点的edge一一查，不在seen的进queue
 const adjacencyList = [
   [1, 3],
   [0],
@@ -783,7 +783,7 @@ const traversalBFS = function(graph) {
 
 
 //Deepth-first search
-
+//口诀：起点往内走，一道接一道，values,graph,node,seen驷马并驱，存values-放seen的true，node边走边查edge，不在seen就递归
 const adjacencyList = [
   [1, 3],
   [0],
