@@ -831,4 +831,5 @@ if (!root) {
   }
  
   return isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max); 
+  
   }
