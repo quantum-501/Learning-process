@@ -258,7 +258,7 @@ const getMaxWaterContainer = function(heights) {
   return maxArea;
 }
 
-//one of two pointers is moving to the end while another pointer is moving to the front. Both of pointers are at the middle of array.
+////one of two pointers is moving to the end while another pointer is moving to the front. Both of pointers are at the middle of array.
 
 const getMaxWaterContainer = function(heights) {
   let p1 = Math.floor(heights.length/2);
