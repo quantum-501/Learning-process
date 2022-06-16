@@ -882,3 +882,24 @@ MedianFinder.prototype.findMedian = function() {
             : (this.arr[mid] + this.arr[mid - 1]) / 2;
     
 };
+
+//insert Interval
+var insert = function(intervals, newInterval) {
+let result = []
+    
+    for(let i = 0; i < intervals.length; i++){
+        //not overlapping with current interval
+        if(newInterval[1] < intervals[i][0]){
+            result.push(newInterval)
+            result.push(...intervals.slice(i))
+            return result
+        }else if(newInterval[0] > intervals[i][1]){
+            result.push(intervals[i])
+        }else{
+            //is overlapping with current interval
+            newInterval = [Math.min(newInterval[0], intervals[i][0]), Math.max(newInterval[1], intervals[i][1])]
+            //extend interval if needed
+        }
+    }
+    result.push(newInterval)
+    return result
