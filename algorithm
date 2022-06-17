@@ -815,8 +815,33 @@ traversalDFS(0, adjacencyList, values, {})
 
 console.log(values);
 
+// Seeking kth smallest node in Binary search tree
+// deep-first search
 
-/ Validate Binary Search Tree
+var kthSmallest = function(root, k) {
+let stack = [];
+    let count = 0;
+    let node = root;
+    
+    while (true){
+        if (node){
+            stack.push(node);
+            node = node.left;
+        } else {
+            if (stack.length == 0) break;
+            node = stack.pop();
+            count += 1;
+            if (count == k) return node.val;
+            node = node.right;
+        }
+    }
+    
+conclusion: 
+// whatever kind of advanced data structure including tree||gragh||heap, they are totally tried to make use of inorder - preorder - postorder 
+deep-first search and bread-first search and so on. however, when these methods are used, i should make judgements for adjusting each data structure.
+
+
+// Validate Binary Search Tree
 var isValidBST = function(root,min, max) {
 if (!root) { 
     return true;
