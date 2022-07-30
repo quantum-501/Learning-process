@@ -138,10 +138,6 @@ Less和原生CSS的区别？
 场景题：接到需求后，你会如何安排接下来的工作？
 接到需求后，更偏向于独立完成还是寻求帮助？
 
-作者：勇敢牛牛不怕困难j
-链接：https://www.nowcoder.com/discuss/998583?source_id=discuss_experience_nctrack&channel=-1
-来源：牛客网
-
 ajax同步异步区别，使用场景
 requirejs核心原理
 document.write和innerHTML区别
@@ -157,3 +153,7 @@ websocket
 tcp和udp区别
 水平垂直居中实现
 重绘重排区别，什么属性引起重绘，什么属性引起重排
+
+hash模式和history模式如何跳转？
+Promise.all手写
+函数柯里化手写实现add(2, 3, 4) = 9, add(2, 3)(4) = 9, add(2)(3)(4) = 9
