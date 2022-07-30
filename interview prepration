@@ -157,3 +157,11 @@ tcp和udp区别
 hash模式和history模式如何跳转？
 Promise.all手写
 函数柯里化手写实现add(2, 3, 4) = 9, add(2, 3)(4) = 9, add(2)(3)(4) = 9
+
+axios和ajax的区别
+进程和线程的区别
+轮播图的js实现
+setTimeout实际延迟时间
+项目跨域
+tcp，udp区别
+xss，csrf防范手段
