@@ -4,7 +4,12 @@ Css：
 3.优化 CSS 图片加载的常见技术(https://blog.csdn.net/tattoo_jie/article/details/108349186)
   CSSSprite减少对服务器请求; SVGSprite 体积小，矢量; Iconfont体积小,矢量集成度高; Base64减少对服务器请求
 4.block formatting context (BFC)是块框布局发生的区域以及浮动与其他元素交互的区域。(https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
-5.
+5.超链接访问过后 hover 样式就不出现了，被点击访问过的超链接样式不再具有hover和active了，解决方案是:
+  a:link是未访问的链接；a:visited是已访问的链接；a:hover是鼠标悬停在链接上；a:active是被选择的链接; 执行顺序是从上向下,先普通后特殊
+6.float元素内，行内元素与浮动元素重叠，其边框，背景和内容都会在浮动元素之上。float与position关系（https://www.jianshu.com/p/8223fb64bb40）
+7.link和import关系：link属于html无兼容问题，并支持并行下载，也可以指定候选样式rel="alternate stylesheet" ，@import是CSS方式，多嵌套导致串行下载出现文档样式短暂失效)，浏览器对
+  link支持早于@import；@import必须在样式规则之前，可以在css文件中引用其他文件
+
 
 Html：
 1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
