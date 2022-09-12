@@ -3,9 +3,11 @@ Css：
 2.前端性能优化(css动画篇) https://segmentfault.com/a/1190000000490328
 3.优化 CSS 图片加载的常见技术(https://blog.csdn.net/tattoo_jie/article/details/108349186)
   CSSSprite减少对服务器请求; SVGSprite 体积小，矢量; Iconfont体积小,矢量集成度高; Base64减少对服务器请求
-   
-
+4.block formatting context (BFC)是块框布局发生的区域以及浮动与其他元素交互的区域。(https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
+5.
 
 Html：
 1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
 使用“样式”标记在HTML文档的标题部分中定义样式表规则。Inline Style Sheet - 使用style属性直接与HTML元素一起定义样式表规则。
+2.SVG：是可伸缩图像，使用XML定义的基于矢量的网络图形，也不会因为放大缩小而产生图片质量损失，也是万维网联盟的标准。SVG与诸如DOM和XSL之类的 W3C 标准是一个整体
+
