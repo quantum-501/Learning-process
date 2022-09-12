@@ -1,6 +1,9 @@
 Css：
 1.百分比单位始终根据父元素相应值来计算（❌):相对于父元素不是清晰的概念。对于普通定位元素中absolute元素是相对于已定位的父元素。而对于fixed元素是相对于ViewPort（可视窗口）
-2.
+2.前端性能优化(css动画篇) https://segmentfault.com/a/1190000000490328
+3.优化 CSS 图片加载的常见技术(https://blog.csdn.net/tattoo_jie/article/details/108349186)
+  CSSSprite减少对服务器请求; SVGSprite 体积小，矢量; Iconfont体积小,矢量集成度高; Base64减少对服务器请求
+   
 
 
 Html：
