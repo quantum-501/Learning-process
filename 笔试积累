@@ -1,0 +1,8 @@
+Css：
+1.百分比单位始终根据父元素相应值来计算（❌):相对于父元素不是清晰的概念。对于普通定位元素中absolute元素是相对于已定位的父元素。而对于fixed元素是相对于ViewPort（可视窗口）
+2.
+
+
+Html：
+1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
+使用“样式”标记在HTML文档的标题部分中定义样式表规则。Inline Style Sheet - 使用style属性直接与HTML元素一起定义样式表规则。
