@@ -4,4 +4,7 @@
 4. arr.filter()用于筛选出满足要求的数组元素，并返回新的数组，因此输出结果为[20,12]；.some()用于检测数组是否有满足条件的元素，只要元素满足要求返回true，否则false；.every()检测数组
    所有元素是否都满足条件，是返回true，否返回false；.map()会对数组中每个元素进行单独判断，返回true或false，作为新数组的元素，输出结果为[false, true, false, true, false]
    （https://blog.csdn.net/weixin_43814020/article/details/106678432）
-5. var carname="Volvo";var carname; IS EQUAL TO var carname; var carname; // 覆盖了第一个carname  carname="Volvo"
+5. js变量提升的机制，变量声明优先于变量赋值 var carname="Volvo";var carname; IS EQUAL TO var carname; var carname; // 覆盖了第一个carname  carname="Volvo" 
+6. promise遇到receive或reject情况，大多数情况下，回调函数then: 分别向doneList和failList中添加回调函数； always: 添加一个无论成功还是失败都会调用的回调函数
+7. var x=y===true?”true”:”false”; ===表示同一类型变量的比较，将比较结果给x赋值； 赋值操作符（=）优先级小于三元操作符的优先级
+8. event loop和 callback queue ： https://www.ruanyifeng.com/blog/2014/10/event-loop.html
