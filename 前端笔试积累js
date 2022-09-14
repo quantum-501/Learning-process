@@ -18,3 +18,4 @@
 15. 在jsx中，class是js关键字，要用classname代替class<div class=”msg-box”>{msg}</div>；直接写行内样式<style={{height: 50}}>时不能采用引号，而是style={{color:'red'}}的方式。
 16. parseInt(string,raix)有两个参数//注意:string字符串只会被解析从第一个字符开始直到不是数字的字符部分;console.log(parseInt('22e3'))//22//当字符串中间存在非数字,就只解析前面数字的部分字符;
 17. 不可事件冒泡：load,unload,abort(音频综止）resize，error，mouseenter，mouseleave,blur,focus,
+18. 1 in [1]并不是表示数字1在不在数组里。而是表示数组中含不含有1这个索引index值
