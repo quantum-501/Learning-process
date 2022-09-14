@@ -20,3 +20,14 @@
 17. 不可事件冒泡：load,unload,abort(音频综止）resize，error，mouseenter，mouseleave,blur,focus,
 18. 1 in [1]并不是表示数字1在不在数组里。而是表示数组中含不含有1这个索引index值;
 19. 1&&2>1. 先判断2>1再判断&&
+20. <button>点击</button> <script> var btn = document.querySelector('button');</script>执行以下程序,要求当用户点击按钮1秒后禁用按钮,以下选项的做法,不符合要求的()
+    A.btn.onclick = function(){ var that = this; setTimeout(function(){that.disabled = true;},1000) }
+    B.btn.onclick = function(){ setTimeout(function(){this.disabled = true;},1000) }
+    C.btn.onclick = function(){ setTimeout(()=>{  this.disabled = true; },1000) }
+    D.btn.onclick = function(){ setTimeout(function(){this.disabled = true;}.bind(this),1000) }
+    B选项，在定时器中，this指向window对象，而不是btn对象。而在定时器的同级作用域，this指代btn对象，ACD选项均是在定时器函数中使用该btn对象。
+21. 使用new Function()创建函数对象时，其参数必须为字符串形式。
+22. <div id=”info” style=”display:block”><p> 请填写 </p></div>
+    document.innerHTML: 也就是从对象的起始位置到终止位置的全部内容,包括Html标签。上例中的test.innerHTML的值也就是“<span style="color:red">test1</span> test2 ”。
+    document.innerText:从起始位置到终止位置的内容, 但它去除Html标签;上例中的text.innerTest的值也就是“test1 test2”, 其中span标签去除了。
+    doc.outerHTML:除了包含innerHTML的全部内容外, 还包含对象标签本身;上例中的text.outerHTML的值也就是<div id="test"><span style="color:red">test1</span> test2</div>
