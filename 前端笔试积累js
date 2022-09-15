@@ -33,3 +33,4 @@
     doc.outerHTML:除了包含innerHTML的全部内容外, 还包含对象标签本身;上例中的text.outerHTML的值也就是<div id="test"><span style="color:red">test1</span> test2</div>
 23. 1 in Object(1.0).constructor; //false;  Number[1] = 123; 1 in Object(1.0).constructor; //true  因为number在object原型链上
 24. continue语句只能用在while语句、do/while语句、for语句、或者for/in语句的循环体内，在其它地方使用都会引起错误！是停止当前语句，并从头执行该语句
+    break的意思是跳出循环，也就是循环结束。
