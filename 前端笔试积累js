@@ -39,4 +39,4 @@
 26. AMD(推崇依赖前置)是 RequireJS 在推广过程中对模块定义的规范化产出，而CMD(依赖就近)是 SeaJS 在推广过程中对模块定义的规范化产出;
 27. enum TYPE { OK, YES } // ts 有enum直接用 js先定义空对象再添加 & 在一个字符串枚举里，每个成员都必须用字符串字面量，或另外一个字符串枚举成员进行初始化
 28. append(content)方法. 作用：向每个匹配的元素内部追加内容. 参数介绍：content (<Content>): 要追加到目标中的内容。
-    appendTo(expr)方法. 作用：把所有匹配的元素追加到指定的元素元素集合中 参数介绍：expr (String): 用于匹配元素的jQuery表达式
+    appendTo(expr)方法. 作用：把所有匹配的元素追加到指定的元素元素集合中 参数介绍：expr (String): 用于匹配元素的jQuery表达式;append是大放小; appendtto是小放大
