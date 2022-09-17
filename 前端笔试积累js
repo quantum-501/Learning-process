@@ -42,3 +42,4 @@
     appendTo(expr)方法. 作用：把所有匹配的元素追加到指定的元素元素集合中 参数介绍：expr (String): 用于匹配元素的jQuery表达式;append是大放小; appendtto是小放大
 29. arr instanceof array; //false
 30. NaA与任何不相等，测试返回的不是true或false的值
+31. for in循环是遍历对象上的每一个可枚举属性,包括原型链上面的可枚举属性,
