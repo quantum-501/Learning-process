@@ -47,3 +47,4 @@
 33. console.log(undefined + 1);undefined+1的结果为NaN，而不是undefined;
 34. 函数如果没有return语句，则默认return undefined；在严格模式下，函数不允许重名参数；
 35. Browser 对象 有关的对象: history screen location Navigator
+36. document.getElementById(“id”).setAttribute(“disabled”,”true”);document.getElementById(“id”).disabled=true;表示某属性id的html元素被禁用了
