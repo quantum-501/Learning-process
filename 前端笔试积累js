@@ -50,3 +50,4 @@
 36. document.getElementById(“id”).setAttribute(“disabled”,”true”);document.getElementById(“id”).disabled=true;表示某属性id的html元素被禁用了
 37. js常见的继承方式原型链继承、借用构造函数继承、组合继承、原型式继承、寄生式继承、寄生组合式继承，以及ES6新增的class继承，但不包括关联继承
 38. 正则表达式exec()用于检索字符串中的正则表达式的匹配,匹配到返回正则，不到就是null,并且和match一样只匹配一次；test()方法返回是boolean
+39. isNaN(1/0)返回的是false。但是isNaN(0/0)返回的就是true
