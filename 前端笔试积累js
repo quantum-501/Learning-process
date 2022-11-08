@@ -48,3 +48,4 @@
 34. 函数如果没有return语句，则默认return undefined；在严格模式下，函数不允许重名参数；
 35. Browser 对象 有关的对象: history screen location Navigator
 36. document.getElementById(“id”).setAttribute(“disabled”,”true”);document.getElementById(“id”).disabled=true;表示某属性id的html元素被禁用了
+37. js常见的继承方式原型链继承、借用构造函数继承、组合继承、原型式继承、寄生式继承、寄生组合式继承，以及ES6新增的class继承，但不包括关联继承
