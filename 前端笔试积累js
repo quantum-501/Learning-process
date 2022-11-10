@@ -17,7 +17,7 @@
     原式变为 false || 1 || false（按正常顺序执行）3)false||1，结果是1（逻辑或的规则：第一个操作数是假值，则返回第二个操作数）4）1||false，结果1（逻辑:首个操符是真,返回首个操符）
 15. 在jsx中，class是js关键字，要用classname代替class<div class=”msg-box”>{msg}</div>；直接写行内样式<style={{height: 50}}>时不能采用引号，而是style={{color:'red'}}的方式。
 16. parseInt(string,raix)有两个参数//注意:string字符串只会被解析从第一个字符开始直到不是数字的字符部分;console.log(parseInt('22e3'))//22//当字符串中间存在非数字,就只解析前面数字的部分字符;
-17. 不可事件冒泡：load,unload,abort(音频综止）resize，error，mouseenter，mouseleave,blur,focus,
+17. 不可事件冒泡:load,unload,abort(音频综止）resize，error，mouseenter，mouseleave,blur,focus,
 18. 1 in [1]并不是表示数字1在不在数组里。而是表示数组中含不含有1这个索引index值;in操作符，对于数组属性需要指定数字形式的索引值来表示数组的属性名称表示1
 19. 1&&2>1. 先判断2>1再判断&&
 20. <button>点击</button> <script> var btn = document.querySelector('button');</script>执行以下程序,要求当用户点击按钮1秒后禁用按钮,以下选项的做法,不符合要求的()
@@ -40,8 +40,8 @@
 27. enum TYPE { OK, YES } // ts 有enum直接用 js先定义空对象再添加 & 在一个字符串枚举里，每个成员都必须用字符串字面量，或另外一个字符串枚举成员进行初始化
 28. append(content)方法. 作用：向每个匹配的元素内部追加内容. 参数介绍：content (<Content>): 要追加到目标中的内容。
     appendTo(expr)方法. 作用：把所有匹配的元素追加到指定的元素元素集合中 参数介绍：expr (String): 用于匹配元素的jQuery表达式;append是大放小; appendtto是小放大
-29. arr instanceof array; //false
-30. NaA与任何不相等，测试返回的不是true或false的值
+29. arr instanceof array; //false || 只有实例对象(var x=new A().do();)上不存在的属性和方法才会去原型上查找
+30. NaA与任何不相等，测试返回的不是true或false的值 ｜｜ +作为一元运算符时，会将参数转换为数字返回，eg: +new Array(017) return NaN
 31. for in循环是遍历对象上的每一个可枚举属性,包括原型链上面的可枚举属性,
 32. obeject.keys()只是遍历自身的可枚举属性,不可以遍历原型链上的可枚举属性
 33. console.log(undefined + 1);undefined+1的结果为NaN，而不是undefined;
@@ -57,6 +57,8 @@
      console.log(i)} 上面代码函数function(){console.log(i)}没有被调用，此函数内部的代码不会被执行 
      } 如果函数里面没返回值，那么会返回一个函数
 43.typeof的结果只有基本数据类型 number string boolean undefined object function  不会有float
-44. 只有实例对象(var x=new A().do();)上不存在的属性和方法才会去原型上查找
+44.与Browser有关的对象: history screen location Navigator
 45.Javascript和css没有display:visible属性和display:hidden属性；
 46.JavaScript是专门为与网页交互而设计的,由三个不同的部分组成:ECMAScript核心语言功能,DOM(文档对象模型)访问和操作网页内容的方法和接口;BOM(浏览器对象模型)与浏览器交互的方法和接口
+47.函数提升优先级高于变量提升，且不会被同名变量声明覆盖，但是会被变量赋值后覆盖
+48.get和post方法传递参数: get有长度限制并且会出现页面参数泄露在地址栏中的情况; url中参数用&连接
