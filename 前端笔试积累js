@@ -58,5 +58,5 @@
      } 如果函数里面没返回值，那么会返回一个函数
 43.typeof的结果只有基本数据类型 number string boolean undefined object function  不会有float
 44. 只有实例对象(var x=new A().do();)上不存在的属性和方法才会去原型上查找
-45. Javascript和css没有display:visible属性和display:hidden属性；
-46，JavaScript是一种专门为与网页交互而设计的语言，由下列三个不同的部分组成:ECMAScript提供核心语言功能；DOM(文档对象模型)提供访问和操作网页内容的方法和接口;BOM(浏览器对象模型)提供与浏览器交互的方法和接口
+45.Javascript和css没有display:visible属性和display:hidden属性；
+46.JavaScript是专门为与网页交互而设计的,由三个不同的部分组成:ECMAScript核心语言功能,DOM(文档对象模型)访问和操作网页内容的方法和接口;BOM(浏览器对象模型)与浏览器交互的方法和接口
