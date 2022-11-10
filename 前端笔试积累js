@@ -58,3 +58,4 @@
      } 如果函数里面没返回值，那么会返回一个函数
 43.typeof的结果只有基本数据类型 number string boolean undefined object function  不会有float
 44. 只有实例对象(var x=new A().do();)上不存在的属性和方法才会去原型上查找
+45. Javascript和css没有display:visible属性和display:hidden属性；
