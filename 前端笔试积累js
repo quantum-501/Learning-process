@@ -82,3 +82,6 @@
 60. *：出现零到多次; +：出现一到多次; ?:出现零次或者一次; .: 除了\n以外的任意字符; {n}: 出现n次; {n,}: 出现n到多次; {n,m} : 出现n到m次
 61. x++是属于后置型运算，优先级低，z=x++是先算z=x，最后x再执行自增;;++x先加再赋值; x++先赋值在++
 62. Boolean([]); //true; Number([]); //0; Number({}); // NaN;Number(false); //0
+63. console.log(([])?true:fasle);// => console.log((true)?true:false);console.log([]==false?true:false); // => console.log(0==0?true:false); 
+    console.log(({}==false)?true:false); // => console.log((NaN==0)?true:false);
+64. apply,call,bind区别：fn.apply(上下文环境，执行所需数组);fn.call(上下文环境，执行所需单个参数);fn.bind(上下文环境)
