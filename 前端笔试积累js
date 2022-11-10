@@ -56,3 +56,4 @@
 42.  for (i = 0; i < 3; i++) {      num[i] = function () {  //这代码相当于num.push(function(){console.log(i)}),会改变原数组
      console.log(i)} 上面代码函数function(){console.log(i)}没有被调用，此函数内部的代码不会被执行 
      } 如果函数里面没返回值，那么会返回一个函数
+43.typeof的结果只有基本数据类型 number string boolean undefined object function  不会有float
