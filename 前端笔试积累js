@@ -81,3 +81,4 @@
 59. 一个数据结构具有Symbol.iterator属性，就可认为“可遍历的”（iterable）,原生具备Iterator结构接口如下:Array/Map/Set/String/TypedArray/函数arguments对象/NodeList对象
 60. *：出现零到多次; +：出现一到多次; ?:出现零次或者一次; .: 除了\n以外的任意字符; {n}: 出现n次; {n,}: 出现n到多次; {n,m} : 出现n到m次
 61. x++是属于后置型运算，优先级低，z=x++是先算z=x，最后x再执行自增;;++x先加再赋值; x++先赋值在++
+62. Boolean([]); //true; Number([]); //0; Number({}); // NaN;Number(false); //0
