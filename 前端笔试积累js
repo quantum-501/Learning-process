@@ -56,15 +56,26 @@
 42.  for (i = 0; i < 3; i++) {      num[i] = function () {  //这代码相当于num.push(function(){console.log(i)}),会改变原数组
      console.log(i)} 上面代码函数function(){console.log(i)}没有被调用，此函数内部的代码不会被执行 
      } 如果函数里面没返回值，那么会返回一个函数
-43.typeof的结果只有基本数据类型 number string boolean undefined object function  不会有float
-44.与Browser有关的对象: history screen location Navigator
-45.Javascript和css没有display:visible属性和display:hidden属性；
-46.JavaScript是专门为与网页交互而设计的,由三个不同的部分组成:ECMAScript核心语言功能,DOM(文档对象模型)访问和操作网页内容的方法和接口;BOM(浏览器对象模型)与浏览器交互的方法和接口
-47.函数提升优先级高于变量提升，且不会被同名变量声明覆盖，但是会被变量赋值后覆盖
-48.get和post方法传递参数: get有长度限制并且会出现页面参数泄露在地址栏中的情况; url中参数用&连接
-49.arrary.forEach(a,b)是循环遍历数组，虽然函数内部存在return语句，但当执行return时会退出一次迭代，然后继续下一次元素迭代，a为数组元素值，b为数组元素对应索引
-50. 1&&2运算，如果前值为true,则结果为后值。如果前值为false,则值为前值;1||2运算，如果前值为true,则结果为前值,如果前值为false,则结果为后值。
+43.typeof的结果只有基本数据类型 number string boolean undefined object function 不有float
+44.Javascript和css没有display:visible属性和display:hidden属性；与Browser有关的对象: history screen location Navigator
+45.JavaScript是专门为与网页交互而设计的,由三个不同的部分组成:ECMAScript核心语言功能,DOM(文档对象模型)访问和操作网页内容的方法和接口;BOM(浏览器对象模型)与浏览器交互的方法和接口
+46.arrary.forEach(a,b)是循环遍历数组，虽然函数内部存在return语句，但当执行return时会退出一次迭代，然后继续下一次元素迭代，a为数组元素值，b为数组元素对应索引
+47. 1&&2运算，如果前值为true,则结果为后值。如果前值为false,则值为前值;1||2运算，如果前值为true,则结果为前值,如果前值为false,则结果为后值。
+48. get和post方法传递参数: get有长度限制并且会出现页面参数泄露在地址栏中的情况; url中参数用&连接
+49. 正则表达式中：/[^]/表示非；/^/表示以...开头
+50. 函数提升优先级高于变量提升，且不会被同名变量声明覆盖，但是会被变量赋值后覆盖
 51. noscript表示脚本未执行时的替代，可以用来检测浏览器是否支持脚本，若不支持则显示noscript标签中的内容。此标签可被用于可以识别script标签但无法支持其中脚本的浏览器
 52.js解析顺序：变量声明(foo#1) < 函数声明(foo#2) < 变量赋值(foo#3）｜｜ 数组长度会自动延长到最后一个被赋值的位置，中间没有被赋值的都为 undefined
 53.new操作符原理 -创建一个新的空对象 ->将新对象隐式原型指向构造函数的显式原型 ->将构造函数this指向新对象后执行构造并给新对象添加属性和方法 ->判断构造函数返回值类型，如果是基本类型
    则返回创建的新对象，如果是引用类型，则返回这个引用类型值
+54.Object.defineProperty设置属性后,有属性描述符writable,configurable,enumberable默为false(暗示不遍历);而for..in..可把原型对象身的所有属性遍历出来;Object.keys()不能把原型对象非自身属性遍历出来
+55.属性描述对象是JavaScript提供了一个内部数据结构,用来描述对象的属性,控制它的行为,含有六个属性：
+   value：设置该属性的属性值，默为undefined; get：是个函数，表示该属性的取值函数（getter),默为undefined; set：是个函数，表示该属性的存值函数（setter），默为undefined
+   writable：表示能否修改属性的值，也就是说该属性是可写的还是只读的，默认为true（可写）
+   enumerable：表示改属性是否可遍历，默认为true（可遍历）； configurable：表示能否通过 delete 删除属性、能否修改属性的特性，或者将属性修改为访问器属性，默认为true（可配置）
+56. className属性设置或返回元素class属性。获取属性值：HTMLElementObject.className,设置属性值：HTMLElementObject.className=classname；id属性设置或返回元素id。HTMLElementObject.id=id
+    tagName属性返回元素标签名。HTML返回tagName属性的值是大写的；innerHTML属性设置或返回表格行的开始和结束标签之间的HTML。HTMLElementObject.innerHTML=text；
+57.conutine可用于for,if,while语句中，表示跳出本次循环（break表示跳出循环，本次循环之后的都不执行） 
+58. Ajax的优势：1.可搜索性 2.开放性 3.费用 4.易用性 5.易于开发。 劣势：可能破坏浏览器的后退功能；使用动态页面更新使得用户难于将某个特定的状态保存到收藏夹中，不过有相关方法解决  
+    Flash的优势：1.多媒体处理 2.兼容性 3.矢量图形 4.客户端资源调度。劣势：1.二进制格式 2.格式私有 3.flash 文件经常会很大，用户第一次使用的时候需要忍耐较长的等待时间 4.性能问题
+59. 一个数据结构具有Symbol.iterator属性，就可认为“可遍历的”（iterable）,原生具备Iterator结构接口如下:Array/Map/Set/String/TypedArray/函数arguments对象/NodeList对象
