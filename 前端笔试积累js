@@ -53,3 +53,6 @@
 39. isNaN(1/0)返回的是false。但是isNaN(0/0)返回的就是true
 40. 引用数据类型：存储在堆中的对象，存储在栈中的值是一个指针，指向 存储对象的内存地址， object属于引用数据类型,修改objecy内部属性不会改变数值
 41. Xml一般用于传输和存储数据，是对html的补充，两者的目的不同；在JavaScript里解析和处理xml数据时，因为浏览器的不同，其做法也不同；在IE浏览器里处理xml，首先需要创建ActiveXObject对象
+42.  for (i = 0; i < 3; i++) {      num[i] = function () {  //这代码相当于num.push(function(){console.log(i)}),会改变原数组
+     console.log(i)} 上面代码函数function(){console.log(i)}没有被调用，此函数内部的代码不会被执行 
+     } 如果函数里面没返回值，那么会返回一个函数
