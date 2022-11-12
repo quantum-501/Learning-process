@@ -56,7 +56,7 @@
 42.  for (i = 0; i < 3; i++) {      num[i] = function () {  //这代码相当于num.push(function(){console.log(i)}),会改变原数组
      console.log(i)} 上面代码函数function(){console.log(i)}没有被调用，此函数内部的代码不会被执行 
      } 如果函数里面没返回值，那么会返回一个函数
-43.typeof判断引用类型数据number string boolean undefined object function 不有float，除了function以外都会判断成为object
+43.typeof判断引用类型数据number string boolean undefined object function 不有float，除了function以外都会判断成为object,function判断为Error;
 44.Javascript和css没有display:visible属性和display:hidden属性；与Browser有关的对象: history screen location Navigator
 45.JavaScript是专门为与网页交互而设计的,由三个不同的部分组成:ECMAScript核心语言功能,DOM(文档对象模型)访问和操作网页内容的方法和接口;BOM(浏览器对象模型)与浏览器交互的方法和接口
 46.arrary.forEach(a,b)是循环遍历数组，虽然函数内部存在return语句，但当执行return时会退出一次迭代，然后继续下一次元素迭代，a为数组元素值，b为数组元素对应索引
