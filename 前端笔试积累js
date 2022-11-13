@@ -90,3 +90,5 @@
 66. 中文占2个字节(byte)中文里标点也占2个字节(byte),英文里的子母不分大小写，一个子母占1个字节,英文里的标点占1个字节. 1字节(byte)=8位(bits)
 67. 实现在jQuery中通过远程HTTP的GET请求载入信息:  getScript()方法通过HTTP-GET请求载入并执行 JavaScript 文件;   $.get() 方法通过 HTTP GET 请求从服务器上请求数据;
     load() 方法从服务器加载数据，并把返回的数据放入被选元素中;  ajax() 方法通过 HTTP 请求加载远程数据;  $.ajax(opts);opts为json格式，常见参数url、type、data等
+68. 运算方式:number +number =数值相加; number+string= 字符串拼接 如题：“2”+3=拼接      “23”+4=拼接
+69. 对非数值会进行函数转换number() undefined undefined=0; null,null=0; boolean true=1 false=0;number原先的数值;string;object转为string 
