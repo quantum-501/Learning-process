@@ -25,8 +25,8 @@
     B.btn.onclick = function(){ setTimeout(function(){this.disabled = true;},1000) }
     C.btn.onclick = function(){ setTimeout(()=>{  this.disabled = true; },1000) }
     D.btn.onclick = function(){ setTimeout(function(){this.disabled = true;}.bind(this),1000) }
-    B选项，在定时器中，this指向window对象，而不是btn对象。而在定时器的同级作用域，this指代btn对象，ACD选项均是在定时器函数中使用该btn对象。
-21. 使用new Function()创建函数对象时，其参数必须为字符串形式。
+    B选项，在定时器中，this指向window对象，而不是btn对象。而在定时器的同级作用域，this指代btn对象，ACD选项均是在定时器函数中使用该btn对象; 
+21. 使用new Function()创建函数对象时，其参数必须为字符串形式;全局函数调用时，this指向全局函数； 应该是指向调用全局函数的对象。
 22. <div id=”info” style=”display:block”><p> 请填写 </p></div>
     document.innerHTML: 也就是从对象的起始位置到终止位置的全部内容,包括Html标签。上例中的test.innerHTML的值也就是“<span style="color:red">test1</span> test2 ”。
     document.innerText:从起始位置到终止位置的内容, 但它去除Html标签;上例中的text.innerTest的值也就是“test1 test2”, 其中span标签去除了。
@@ -67,7 +67,7 @@
 51. noscript表示脚本未执行时的替代，可以用来检测浏览器是否支持脚本，若不支持则显示noscript标签中的内容。此标签可被用于可以识别script标签但无法支持其中脚本的浏览器
 52.js解析顺序：变量声明(foo#1) < 函数声明(foo#2) < 变量赋值(foo#3）｜｜ 数组长度会自动延长到最后一个被赋值的位置，中间没有被赋值的都为 undefined
 53.new操作符原理 -创建一个新的空对象 ->将新对象隐式原型指向构造函数的显式原型 ->将构造函数this指向新对象后执行构造并给新对象添加属性和方法 ->判断构造函数返回值类型，如果是基本类型
-   则返回创建的新对象，如果是引用类型，则返回这个引用类型值
+   则返回创建的新对象，如果是引用类型，则返回这个引用类型值;
 54.Object.defineProperty设置属性后,有属性描述符writable,configurable,enumberable默为false(暗示不遍历);而for..in..可把原型对象身的所有属性遍历出来;Object.keys()不能把原型对象非自身属性遍历出来
 55.属性描述对象是JavaScript提供了一个内部数据结构,用来描述对象的属性,控制它的行为,含有六个属性：
    value：设置该属性的属性值，默为undefined; get：是个函数，表示该属性的取值函数（getter),默为undefined; set：是个函数，表示该属性的存值函数（setter），默为undefined
