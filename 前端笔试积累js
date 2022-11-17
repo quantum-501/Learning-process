@@ -98,6 +98,4 @@
     Number.isNaN() 不会自行将参数转换成数字，只有在参数是值为 NaN 的数字时，才会返回 true
 73. 响应头设置cookie必须要设置withCredentials为true，同时标记Secure的Cookie只通过被HTTPS加密过的请求发送给服务端，因可预防{{Glossary（“ MitM”，“ man-in-the -middle“）}}
     攻击者的攻击；另外JavaScript {{domxref（“ Document.cookie”）}} API无法访问带有 HttpOnly 属性的cookie，此时只作用于服务器
-73. 响应头设置cookie必须要设置withCredentials为true，同时标记Secure的Cookie只通过被HTTPS加密过的请求发送给服务端，因可预防{{Glossary（“ MitM”，“ man-in-the -middle“）}}攻击者的攻击
-    
-    
+ 
