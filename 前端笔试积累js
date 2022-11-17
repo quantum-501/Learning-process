@@ -92,3 +92,4 @@
     load() 方法从服务器加载数据，并把返回的数据放入被选元素中;  ajax() 方法通过 HTTP 请求加载远程数据;  $.ajax(opts);opts为json格式，常见参数url、type、data等
 68. 运算方式:number +number =数值相加; number+string= 字符串拼接 如题：“2”+3=拼接      “23”+4=拼接
 69. 对非数值会进行函数转换number() undefined undefined=0; null,null=0; boolean true=1 false=0;number原先的数值;string;object转为string 
+70. Proxy 对象用于定义基本操作的自定义行为:对于代理模式主要体现在三个方面:1)拦截和监视外部对对象的访问,2)降低函数或类的复杂度,3)在复杂操作前对操作进行校验或对所需资源进行管理
