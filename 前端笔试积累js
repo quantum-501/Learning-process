@@ -95,3 +95,9 @@
 70. Proxy 对象用于定义基本操作的自定义行为:对于代理模式主要体现在三个方面:1)拦截和监视外部对对象的访问,2)降低函数或类的复杂度,3)在复杂操作前对操作进行校验或对所需资源进行管理
 71.使⽤ * 表示这是⼀个 Generator 函数;// 内部可以通过 yield 暂停代码 //通过调⽤ next 恢复执⾏
 72. Number.isNaN("NaN");Number.isNaN(undefined);Number.isNaN({}); Number.isNaN("blabla")； // 都为false-字符串 "NaN" 不会被隐式转换成数字 NaN
+    Number.isNaN() 不会自行将参数转换成数字，只有在参数是值为 NaN 的数字时，才会返回 true
+73. 响应头设置cookie必须要设置withCredentials为true，同时标记Secure的Cookie只通过被HTTPS加密过的请求发送给服务端，因可预防{{Glossary（“ MitM”，“ man-in-the -middle“）}}
+    攻击者的攻击；另外JavaScript {{domxref（“ Document.cookie”）}} API无法访问带有 HttpOnly 属性的cookie，此时只作用于服务器
+73. 响应头设置cookie必须要设置withCredentials为true，同时标记Secure的Cookie只通过被HTTPS加密过的请求发送给服务端，因可预防{{Glossary（“ MitM”，“ man-in-the -middle“）}}攻击者的攻击
+    
+    
