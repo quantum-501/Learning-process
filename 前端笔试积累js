@@ -94,3 +94,4 @@
 69. 对非数值会进行函数转换number() undefined undefined=0; null,null=0; boolean true=1 false=0;number原先的数值;string;object转为string 
 70. Proxy 对象用于定义基本操作的自定义行为:对于代理模式主要体现在三个方面:1)拦截和监视外部对对象的访问,2)降低函数或类的复杂度,3)在复杂操作前对操作进行校验或对所需资源进行管理
 71.使⽤ * 表示这是⼀个 Generator 函数;// 内部可以通过 yield 暂停代码 //通过调⽤ next 恢复执⾏
+72. Number.isNaN("NaN");Number.isNaN(undefined);Number.isNaN({}); Number.isNaN("blabla")； // 都为false-字符串 "NaN" 不会被隐式转换成数字 NaN
