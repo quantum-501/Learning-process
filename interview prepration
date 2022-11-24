@@ -20,6 +20,7 @@ Tell me about a time when you had to adapt to major change. How did you cope?
 
 11.25笔试答案
 
+
 var A = {
     score: 10,
 
@@ -28,10 +29,10 @@ var A = {
 
         this.getRank();
     },
-    
+
     getRank: function() {
        
-        rankMediator(A);
+        middleMediator(A);
     },
 
     outCome: function(){
@@ -48,7 +49,7 @@ var B = {
 
 };
 
-function rankMediator(person) {
+function middleMediator(person) {
   
     if(A.score > 0 ){
         B.changeTo(10);
@@ -58,12 +59,7 @@ function rankMediator(person) {
     }
 }
 
-
 A.changeTo(10); 
-
-
-
-
 
 
 
