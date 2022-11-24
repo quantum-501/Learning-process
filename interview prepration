@@ -18,6 +18,56 @@ Tell me about a time when you experienced a big challenge?
 What is cloud computing and what are its advantages/ disadvantages?
 Tell me about a time when you had to adapt to major change. How did you cope?
 
+11.25笔试答案
+
+var A = {
+    score: 10,
+
+    changeTo: function(score) {
+        this.score = score;
+
+        this.getRank();
+    },
+    
+    getRank: function() {
+       
+        rankMediator(A);
+    },
+
+    outCome: function(){
+        console.log('completed');
+    }
+
+};
+
+var B = {
+    score: 10,
+    changeTo: function(score) {
+        this.score = score;
+    },
+
+};
+
+function rankMediator(person) {
+  
+    if(A.score > 0 ){
+        B.changeTo(10);
+        if(B.score>0){
+            A.outCome();
+        }
+    }
+}
+
+
+A.changeTo(10); 
+
+
+
+
+
+
+
+
 什么是跨域？
 解决跨域的方法有哪些？
 CORS 的原理
