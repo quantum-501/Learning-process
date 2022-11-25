@@ -27,12 +27,7 @@ var A = {
     changeTo: function(score) {
         this.score = score;
 
-        this.getRank();
-    },
-
-    getRank: function() {
-       
-        middleMediator(A);
+        middleMediator();
     },
 
     outCome: function(){
