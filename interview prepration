@@ -51,18 +51,27 @@ var B = {
 
 function middleMediator(person) {
   
-    if(A.score > 0 ){
         B.changeTo(10);
         if(B.score>0){
             A.outCome();
         }
-    }
 }
 
 A.changeTo(10); 
 
 
 
+Object.prototype.attr = function (search) {
+    const arr = search.split(".");
+    let obj = this;
+    let outcome;
+    for(let i = 0; i < arr.length; i++) {
+       outcome = obj.hasOwnProperty(arr[i])? arr[i] : undefined;
+    }
+  return outcome
+}
+var w = {a:1,b:2,c:{d:123}};
+w.attr("y.q.we.r.t.y.u.i.o");
 
 什么是跨域？
 解决跨域的方法有哪些？
