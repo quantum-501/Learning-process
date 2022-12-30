@@ -10,6 +10,8 @@ Css：
 7.link和import关系：link属于html无兼容问题，并支持并行下载，也可以指定候选样式rel="alternate stylesheet" ，@import是CSS方式，多嵌套导致串行下载出现文档样式短暂失效)，浏览器对
   link支持早于@import；@import必须在样式规则之前，可以在css文件中引用其他文件
 8. 在文本前加两个字空格的方式是：margin-left:左外边距；padding-left:左内边距；text-indent：段落首行缩进；❌letter-spacing ：增加或减少字符间的空白（字符间距）。
+9.常用选择器：空格和子代>,伪类是产出新内容::after::before,伪元素选择:first-line,:first-letter,:beofre,:after，
+
 
 Html：
 1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
