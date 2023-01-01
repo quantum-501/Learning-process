@@ -20,6 +20,10 @@ Css：
 12. [attribute]用于选取带有指定属性的元素 -- [attribute=value]用于选取带有指定属性和值的元素 -- [attribute~=value]用于选取属性值中包含指定词汇的元素 -- 
 [attribute|=value]用于选取带有以指定值开头的属性值的元素，该值必须是整个单词 -- [attribute^=value]匹配属性值以指定值开头的每个元素 -- [attribute$=value]匹配属性值以指定值结尾的每个元素。
 [attribute*=value]匹配属性值中包含指定值的每个元素
+13. Flex 延伸的方向称为“主轴”，把跟它垂直的方向称为“交叉轴，Flex 排版:1).把flex项分行,有flex属性flex项可以暂且认为主轴尺寸为0,
+    2).每个flex项主轴尺寸和位置,justify-content机制的几个不同的值会影响剩余空白如何分配,3).计算flex项的交叉轴尺寸和位置,交叉轴计算首先根据align-content计算每一行位,
+    这部分跟justify-content非常类似.再根据alignItems和flex项alignSelf 来确定每个元素在行内的位置
+14.
 
 Html：
 1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
