@@ -11,7 +11,10 @@ Css：
   link支持早于@import；@import必须在样式规则之前，可以在css文件中引用其他文件
 8. 在文本前加两个字空格的方式是：margin-left:左外边距；padding-left:左内边距；text-indent：段落首行缩进；❌letter-spacing ：增加或减少字符间的空白（字符间距）。
 9.常用选择器：空格和子代>,伪类是产出新内容::after::before,伪元素选择:first-line,:first-letter,:beofre,:after，
-
+10.正常流的排版行为: 依次排列，排不下了换行,排版过程: 格式化上下文 + 盒 / 文字 = 位置;块级格式化上下文顺次是从上往下，行内级格式化上下文是从左往右；当遇到行内级盒或者文字：
+首先尝试排入行内级格式化上下文，如果排不下，那么创建一个行盒，先将行盒排版（行盒是块级，所以到第一种情况），行盒会创建一个行内级格式化上下文。遇到 float 盒：把盒的顶部跟当前行内级上下文上
+边缘对齐，然后根据 float 的方向把盒的对应边缘对到块级格式化上下文的边缘，之后重排当前行盒，一些元素会在其内部创建新的块级格式化上下文：浮动元素；绝对定位元素；非块级但仍能包含块级元素的容器
+（如 inline-blocks,table-cells, table-captions）；块级的能包含块级元素的容器，且属性 overflow 不为 visible；
 
 Html：
 1.HTML中有三种央视表：External Style Sheet - 在单独的.css文件中定义样式表规则，然后使用HTML“link”标记将该文件包含在HTML文档中。Internal Style Sheet-
