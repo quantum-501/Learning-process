@@ -17,8 +17,8 @@ Css：
 （如 inline-blocks,table-cells, table-captions）；块级的能包含块级元素的容器，且属性 overflow 不为 visible；
 11.类型选择器：根据一个元素的标签名来选中元素；全体选择器：与类型选择器类似，选择任意元素；id 选择器：# 后面跟随 id 名。class 选择器：.后面跟随 class 名。
    伪类选择器：一系列由 CSS 规定好的选择器，它们以冒号开头，伪类有普通型和函数型
-12. [attribute]用于选取带有指定属性的元素 -- [attribute=value]用于选取带有指定属性和值的元素 -- [attribute~=value]用于选取属性值中包含指定词汇的元素 -- 
-[attribute|=value]用于选取带有以指定值开头的属性值的元素，该值必须是整个单词 -- [attribute^=value]匹配属性值以指定值开头的每个元素 -- [attribute$=value]匹配属性值以指定值结尾的每个元素。
+12. [attribute]用于选取带有指定属性的元素 -- [attribute=value]用于选取带有指定属性和值的元素 -- [attribute~=value]用于选取属性值中包含指定词汇的元素 -- [attribute|=value]
+用于选取带有以指定值开头的属性值的元素，该值必须是整个单词 -- [attribute^=value]匹配属性值以指定值开头的每个元素 -- [attribute$=value]匹配属性值以指定值结尾的每个元素--
 [attribute*=value]匹配属性值中包含指定值的每个元素
 13. Flex 延伸的方向称为“主轴”，把跟它垂直的方向称为“交叉轴，Flex 排版:1).把flex项分行,有flex属性flex项可以暂且认为主轴尺寸为0,
     2).每个flex项主轴尺寸和位置,justify-content机制的几个不同的值会影响剩余空白如何分配,3).计算flex项的交叉轴尺寸和位置,交叉轴计算首先根据align-content计算每一行位,
