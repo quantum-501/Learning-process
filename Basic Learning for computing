@@ -1,0 +1,12 @@
+网络协议 
+------------------------------------------------------------------ 分层意义 ------- 解决复杂程序运算
+应用层---DHCP/HTTPS/HTTP/RTMP/P2P/DNS/GTP/RPC                         ｜
+传输层---UDP/TCP                                                      ｜
+网络层---IP/GRE/BGP/OSPE/ICMP                                       程序运行 -- 网络包从网口经过全部拿进来处理，调用process_layer2(buffer)找mac地址相符后调用
+链路层---ARP/VLAN/STP                                                          process_layer3(buffer)确定ip地址是自己的还是要转发的，确认IP后调用process_tcp(buffer) 
+物理层---网络跳线                                                               process_udp(buffer),如是前者,就确认发起,回答,正常数据包;前两者发送答复包,后者给应用层
+                                                                              发现网络应用程序包,不同应用监听不同其端口,如浏览器正监听,直接处理.用户发起http请求和端口号,
+                                                                              调用send_tcp(buffer)buffer有http请求内容,并记下端号,调用send_layer3(buffer)buffer有
+                                                                              httq头,tcp头和内容,记下源ip和目标IP地址,调用send_layer2(buffer)buffer有httq头,tcp头
+                                                                              和内容,源ip和目标IP地址,记下源mac和目标mac地址,网口发出
+                                              
